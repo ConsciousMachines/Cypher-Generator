@@ -82,6 +82,7 @@ def encrypt( message = None, code=None, encrypt = True ):
     for i in k2:
         numbas.append( decimal( i, strength))
     numbas = np.array(numbas)
+    numbas[numbas<=2]=2
     encryptions = numbas[0] 
     if encrypt: 
         e0 = word2bin( [message, numbas[1],numbas[2],numbas[3]] )
