@@ -14,8 +14,8 @@ Now then...
 If you want something done right, you gotta do it yourself.
 
 So why not create our own encryption? This is especially true for modern encryption.
-This meta-algorith generates a personalized encryption scheme based on
-only one keyword that you will haveto remember.
+This meta-algorithm generates a personalized encryption scheme based on
+only one keyword that you will have to remember.
 
 ![Alt text](https://github.com/ConsciousMachines/Cypher-Generator/blob/master/example.png )
 
@@ -33,7 +33,7 @@ print('Validity Test:', decoded == m )
 The algorithm works as follows: Your key generates a series of parameters,
 including the number of encryption steps, the security within each step,
 and more. First it converts your message into binary, then it cuts that binary
-up and reads it as words of different bit length before re-encrpting it
+up and reads it as words of different bit length before re-encrypting it
 in the upcoming steps.
 
 The parameteres are: exponent, refering to the binary exponent which will read
@@ -50,6 +50,6 @@ as the probability of it hitting the same 15-bit number isn't too large.
 The numpy seed must be restarted at each phase to generate the same cypher
 
 
-!!! NOTE: The pass phrase is case-sensitive, and please don't include '\' in
+!!! NOTE: The pass phrase is case-sensitive, and please don't include '\\' in
 the key nor the document you wish to encrypt (except for '\n', that has been
 added to the vocabulary)
