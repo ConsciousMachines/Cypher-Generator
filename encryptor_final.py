@@ -83,7 +83,7 @@ def encrypt( message = None, code=None, encrypt = True ):
         numbas.append( decimal( i, strength))
     numbas = np.array(numbas)
     numbas[numbas<=2]=2
-    encryptions = numbas[0] 
+    encryptions = numbas[0] + 2 # for extra safety :)
     if encrypt: 
         e0 = word2bin( [message, numbas[1],numbas[2],numbas[3]] )
         e1 = e0
@@ -94,7 +94,6 @@ def encrypt( message = None, code=None, encrypt = True ):
     
     if not encrypt:
         try:
-            decryptions = numbas[0] 
             for i in range(encryptions):
                 j = encryptions-1-i
                 code=bindec([code,numbas[4+j],numbas[5+j],numbas[6+j],numbas[7+j]])
