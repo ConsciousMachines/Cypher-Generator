@@ -1,4 +1,4 @@
-# Chain-Cypher Encryption
+# Cypher Generator Encryption
 
 *generate your own encryption scheme with just one key-word*
 
