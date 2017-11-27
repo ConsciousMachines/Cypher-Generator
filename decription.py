@@ -251,9 +251,15 @@ Repeat this process 7 more times, and it will look like this:
 So I doubt you want to see encryption level 4. 
 
 
-This might seem like overkill, but quantum computing is just around the corner ;) 
-So we shall write the encoding to disk to parse it part by part and all shall be quick :)
+How the decryption works: 
+~~~~~~~~~~~~~~~~~~~~~~~~~
+As you saw, the pass-key generates the number of encryption steps, encryption parameters, and cyphers deterministically, 
+independent of the message. That is why your key is never stored anywhere. The decryption does the exact same procedure
+but in reverse and applies it to the encoded string you pass to it. That's why if your key is incorrect, it will immediately
+say so because the decryption will raise an error. 
 
+
+This might seem like overkill, but quantum computing is just around the corner ;) 
 
 
 
