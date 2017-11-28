@@ -1,5 +1,6 @@
 TODOs
 ~~~~~~~~~~~~
+0. add support for all utf-8 characters, not just keyboard characters
 1. include steganography option
 2. use native binary converter for speed improvement
 3. use python native random module so people don't need to install numpy
