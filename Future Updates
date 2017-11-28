@@ -1,0 +1,5 @@
+TODOs
+~~~~~~~~~~~~
+1. include steganography option
+2. use native binary converter for speed improvement
+3. use python native random module so people don't need to install numpy
